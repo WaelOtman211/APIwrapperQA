@@ -9,6 +9,8 @@ class ConfigHandler:
         with open(config_file_path, 'r') as f:
             return json.load(f)
 
+
+
     def get_base_url(self):
         return self.config.get('base_url')
 

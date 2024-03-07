@@ -14,6 +14,8 @@ class DeckEndPoints:
         result = self.my_api.api_get_request(f'deck/{deck_id}/shuffle/')
         return result
 
+
+
     def draw_cards_api(self, deck_id, count):
         result = self.my_api.api_get_request(f'deck/{deck_id}/draw/?count={count}')
         return result.json()

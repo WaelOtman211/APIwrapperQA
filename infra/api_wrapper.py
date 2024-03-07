@@ -11,6 +11,8 @@ class APIWrapper:
         self.base_url = self.config_handler.get_base_url()
         self.cards = self.config_handler.get_cards()
 
+
+
     def api_get_request(self, endpoint):
         url = self.base_url + endpoint
         self.response = requests.get(url)
